@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "progression-slowed",
+	"version": "${version}",
+	"name": "Progression Slowed",
+	"description": "Ever wanted to take Minecraft slow and enjoy the ride? This mod lets you do that!",
+	"authors": [
+		"JooseMann"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/progression-slowed/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.joosemann.progressionslowed.ProgressionSlowed"
+		],
+		"fabric-datagen": [
+			"net.joosemann.progressionslowed.ProgressionSlowedDataGenerator"
+		],
+		"client": [
+			"net.joosemann.progressionslowed.ProgressionSlowedClient"
+		]
+	},
+	"mixins": [
+		"progression-slowed.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
